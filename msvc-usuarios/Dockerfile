@@ -17,6 +17,7 @@ RUN ./mvnw clean package -DskipTests
 FROM openjdk:17-jdk-alpine
 
 WORKDIR /app
+RUN mkdir ./logs
 
 #Copying from openjdk:17-alpine to jar file
 
