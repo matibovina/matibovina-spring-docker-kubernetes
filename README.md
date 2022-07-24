@@ -64,11 +64,11 @@ database.
 - POST
 
 
-    ***{
-    "nombre": "Franco",
-    "email": "franco@bov222",
-    "password": "1234"
-    }***
+          {
+          "nombre": "Franco",
+          "email": "franco@bov222",
+          "password": "1234"
+          }
 
 ## For msvc-cursos:
 
@@ -88,12 +88,12 @@ http://localhost:8002/asignar-usuario/{curso-id}
 (change curso-id value in url)
 
 
-    {
-    "id": 3,
-    "nombre": "Franco",
-    "email": "franco@bov222",
-    "password": "1234"
-    }
+          {
+          "id": 3,
+          "nombre": "Franco",
+          "email": "franco@bov222",
+          "password": "1234"
+          }
 
 ###### See specific "curso" details with students added
 - GET
@@ -107,11 +107,11 @@ http://localhost:8002/crear-usuario/1
 and msvc-cursos)
 
 
-    {        
-    "nombre": "Jane",
-    "email": "jane@did123123",
-    "password": "12345"
-    }
+          {        
+          "nombre": "Jane",
+          "email": "jane@did123123",
+          "password": "12345"
+          }
 
 
 
