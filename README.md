@@ -1,8 +1,8 @@
 # DOCKER+SPRING PROJECT
 
-###### Project has two microservices: msvc-cursos / msvc-usuarios
+### Project has two microservices: msvc-cursos / msvc-usuarios
 
-They comunicate each other with opengeign. Is possible to make
+They comunicate each other with openFeign. Is possible to make
 CRUD with both microservices.
 
 Running the project:
