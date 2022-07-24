@@ -12,47 +12,49 @@ CRUD with both microservices.
 
 Running the project:
 
-###### MSVC-CURSOS:
-_create .env file in ./msvc-cursos/ and add:_
-
-PORT=8002
-DB_HOST=postgres14:5432
-DB_DATABASE=msvc_cursos
-DB_USERNAME=postgres
-DB_PASSWORD=
-USUARIOS_URL=msvc-usuarios:8001
 
 
 ###### MSVC-USUARIOS:
 
 _create .env file in ./msvc-usuarios/ and add:_
 
-PORT=8001
-DB_HOST=mysql8:3306
-DB_DATABASE=msvc_usuarios
-DB_USERNAME=root
-DB_PASSWORD=
-CURSOS_URL=msvc-cursos:8002
+PORT=8001 \
+DB_HOST=mysql8:3306 \
+DB_DATABASE=msvc_usuarios \
+DB_USERNAME=root \
+DB_PASSWORD= \
+CURSOS_URL=msvc-cursos:8002 
+###### MSVC-CURSOS:
+_create .env file in ./msvc-cursos/ and add:_
 
+PORT=8002 \
+DB_HOST=postgres14:5432 \
+DB_DATABASE=msvc_cursos \
+DB_USERNAME=postgres \
+DB_PASSWORD= \
+USUARIOS_URL=msvc-usuarios:8001
+
+~~~
 **Define values of database user and password according
 to your local machine values, and in docker-compose.yaml
 change enviroment variables from mysql and postgres. (password, ports, etc) **
-
+~~~
 Probably you'll need to install PGADMIN or similiar for POSTGRES DB
 and WORKBENCH or similar for MYSQL DB.
 
 
-
-- RUN in CMD:
-***docker-compose up -d***
+~~~
+RUN in CMD: 
+docker-compose up -d
+~~~
 
 # TESTING
-
+~~~
 NOTE 1 of 2: Is possible to delete and modify "cursos" and
 "usuarios" but don't waste time on that, just check
 that the proyect is deployed correctly in your
 local machine.
-
+~~~
 
 Once all containers are runnning, add data to the 
 database.
@@ -116,6 +118,7 @@ and msvc-cursos)
 
 
 
-
+~~~
 Note 2 of 2: the project is not complete, some exceptions
 handling is missing, the goal of this project is to test docker. 
+~~~
