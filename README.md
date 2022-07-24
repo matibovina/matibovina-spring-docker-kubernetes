@@ -81,7 +81,6 @@ http://localhost:8002
         "nombre": "Spring"
         }
 
-    
 ###### Add users to specific "curso"
 - PUT
 http://localhost:8002/asignar-usuario/{curso-id}
