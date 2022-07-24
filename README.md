@@ -43,7 +43,7 @@ and WORKBENCH or similar for MYSQL DB.
 
 
 
-RUN in CMD:
+- RUN in CMD:
 ***docker-compose up -d***
 
 # TESTING
