@@ -30,7 +30,12 @@ DB_PASSWORD=
 CURSOS_URL=msvc-cursos:8002
 
 **Define values of database user and password according
-to your local machine values**
+to your local machine values, and in docker-compose.yaml
+change enviroment variables from mysql and postgres. (password, ports, etc) **
+
+Probably you'll need to install PGADMIN or similiar for POSTGRES DB
+and WORKBENCH or similar for MYSQL DB.
+
 
 
 RUN in CMD:
